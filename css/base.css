@@ -1,0 +1,351 @@
+body {
+    margin: 0px;
+    background: #2F2E2E;
+}
+
+#header {
+    background-color: #202020;
+    overflow: hidden;
+    height: 100px;
+}
+
+#header_logo {
+    margin-left: 15%;
+    height: 100px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 490px) {
+    #header_logo {
+        margin-left: 12%;
+        height: 100px;
+        width: 200px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+#logo {
+    height: 80px;
+}
+
+#logo_text {
+    height: 150px;
+    margin-left: 10px;
+}
+
+.header_spacer {
+    height: 0px;
+    background-color: white;
+}
+
+#navbar {
+    height: 30px;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    top: 0px;
+    background: rgba(59, 59, 59, 0.5);
+    z-index: 999;
+}
+
+.navbar_button {
+    display: inline-flex;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    color:white;
+    opacity: 1;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navbar_button:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.banner {
+    display: block;
+    height: 300px;
+    background: url("https://static.fore.4pcdn.de/premium/Screenshots/96/dc/92609642-vollbild.jpg");
+    background-position: center;
+}
+
+@media (max-width: 490px) {
+    .banner {
+        display: block;
+        height: 120px;
+        background: url("https://static.fore.4pcdn.de/premium/Screenshots/96/dc/92609642-vollbild.jpg");
+        background-position: center;
+    }
+}
+
+.content {
+    margin: auto;
+    margin-top: 50px;
+    width: 70%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 490px) {
+    .content {
+        margin: auto;
+        margin-top: 20px;
+        width: 90%;
+        max-width: 875px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
+.video_content {
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+#rp_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: white;
+    outline-style: solid;
+    outline-width: 10px;
+}
+
+.footer {
+    margin-top: 50px;
+    background-color: #181818;
+    height: 140px;
+    width: auto;
+}
+
+.footer_content {
+    width: 70%;
+    max-width: 1000px;
+    margin: auto;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 100%;
+    grid-column-gap: 20px;
+}
+
+.footer_item {
+    width: 100%;
+    height:  auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 140px;
+}
+
+#footer_sticky_piston_logo {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    width: 130%;
+}
+
+#footer_alien_logo {
+    max-width: 130px;
+}
+
+.content_selection_image {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: all .2s ease-in-out;
+}
+
+.content_selection_image:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.screenshot_slide {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.before-after {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    user-select: none; }
+    .before-after .photo img {
+      display: block;
+      max-width: 100%;
+      height: auto; }
+    .before-after .photo.before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      transform: translate(-50%); }
+      .before-after .photo.before img, .before-after .photo.before .layer {
+        transform: translate(50%); }
+    .before-after .drag-handler {
+      width: 5px;
+      background-color: #ffffff;
+      margin: 0 0 0 -2px;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      height: 100%;
+      opacity: 1; }
+      .before-after .drag-handler .drag-element {
+        position: absolute;
+        left: -17px;
+        top: 50%;
+        width: 32px;
+        height: 32px;
+        margin: -16px 0 0 0;
+        background-color: #ffffff;
+        background-image: url("https://static.wixstatic.com/media/44b079_19aafab241b5430ea2528d3400bbcdbe~mv2.png/v1/fill/w_61,h_61,al_c,q_85,usm_0.66_1.00_0.01/Cube%20Chaos%20Icon.webp");
+        background-size: contain;
+        border: 3px #ffffff solid;
+        cursor: pointer;
+        transform: rotate(45deg); }
+    .before-after:hover .drag-handler {
+      opacity: 1; }
+  /*# sourceMappingURL=before-after.css.map */
+  
+.drag-element {
+    transition: all .2s ease-in-out;
+}
+.drag-element:hover {
+    scale: 1.1;
+}
+.screenshot_slide_selector {
+    width: 100%;
+    height: 70%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.screenshot_slide_preview_img {
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+    border-style: solid;
+    border-color: white;
+    transition: all .2s ease-in-out;
+}
+
+.screenshot_slide_preview_img:hover {
+    cursor: pointer;
+    scale: 1.07;
+}
+.screenshot_slide_selector_btn {
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    margin: 10%;
+    cursor: pointer;
+}
+
+.version_selection_wrapper {
+    height: auto;
+}
+
+.relevant_versions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.version {
+    margin-left: 6px;
+    margin-top: 6px;
+    margin-right: 6px;
+    transition: all .2s ease-in-out;
+}
+
+.version:hover {
+    cursor: pointer;
+    scale: 1.1;
+    filter: hue-rotate(20deg);
+}
+
+.additional_version {
+    display: none;
+}
+
+.more_versions {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#more_versions_button {
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    
+}
+
+#more_versions_button:hover {
+    scale: 1.1;
+    filter: hue-rotate(20deg);
+}
+
+.java_logo {
+    width: 40%;
+}
+
+.bedrock_logo {
+    width: 40%;
+}
+
+.bedrock_marketplace_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.get_on_marketplace_image {
+    margin-bottom: 10px;
+    width: 100%;
+    transition: all .2s ease-in-out;
+}
+
+.get_on_marketplace_image:hover {
+    cursor: pointer;
+    scale: 1.07;
+}
+
+.bedrock_changelog_button {
+    width: 100%;
+    transition: all .2s ease-in-out;
+}
+
+.bedrock_changelog_button:hover {
+    scale: 1.1;
+}

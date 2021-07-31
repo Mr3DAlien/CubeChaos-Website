@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"> 
+    <title>CubeChaos</title>
+    <link rel="stylesheet" href="css/base.css">
+  </head>
+  <body>
+    <div id="header">
+      <div id="header_logo">
+        <img id="logo" src="resources/Icons/Cube Chaos Icon.png">
+        <img id="logo_text" src="resources/Logos/Cube Chaos FullHD.png">
+      </div>
+    </div>
+    <div id="navbar">
+      <a href="index.html" class="navbar_button"> Home </a>
+      <a href="downloads.html" class="navbar_button"> Downloads </a>
+    </div>
+    <div class="header_spacer"></div>
+      <div class="content">
+        <img class="bedrock_logo" src="https://static.wixstatic.com/media/44b079_c23825e1f58d4cc4b3e8ddd877e82630~mv2.png/v1/fill/w_512,h_64,al_c,q_85/Bedrock%20edition.webp">
+        <div class="screenshot_slide">
+          <div id="compare">
+            <img id="slider_left_img" src="resources/compare/compare_1_default.png" alt="Before" />
+            <img id="slider_right_img" src="resources/compare/compare_1_cubechaos.png" alt="After" />
+          </div>
+          <div class="screenshot_slide_selector">
+            <img class="screenshot_slide_preview_img" src="resources/compare/compare_1_cubechaos.png">
+            <img class="screenshot_slide_preview_img" src="resources/compare/compare_2_cubechaos.png">
+            <img class="screenshot_slide_preview_img" src="https://www.wallpaperflare.com/static/1005/886/331/minecraft-render-screen-shot-lake-wallpaper.jpg">
+            <img class="screenshot_slide_preview_img" src="https://www.wallpaperflare.com/static/1005/886/331/minecraft-render-screen-shot-lake-wallpaper.jpg">
+            <img class="screenshot_slide_preview_img" src="https://www.wallpaperflare.com/static/1005/886/331/minecraft-render-screen-shot-lake-wallpaper.jpg">
+          </div>
+            <!--</div>
+            <div class="screenshot_slide_selector_btn screenshot_slide_selector_left"></div>
+            <div class="screenshot_slide_selector_btn screenshot_slide_selector_right"></div>
+          </div> -->
+        </div>
+        <div class="bedrock_marketplace_wrapper">
+            <a href="https://www.minecraft.net/en-us/pdp?id=17799e47-57a0-4167-84a3-d9a662b5e569">
+                <img class="get_on_marketplace_image" src="https://static.wixstatic.com/media/44b079_323d24d89f314809a4f216a41a0abf3b~mv2.png/v1/fill/w_600,h_122,al_c,q_85,usm_0.66_1.00_0.01/button_marketplace.webp">
+            </a>
+            <a href="http://changelogs.cubechaos.net/">
+                <img class="bedrock_changelog_button" src="https://static.wixstatic.com/media/44b079_fd12f0f005454db5b7db56750198ce1c~mv2.png/v1/fill/w_350,h_71,al_c,q_85/Changelogs%20Button.webp">
+            </a>
+        </div>
+    </div>
+    <div class="footer">
+      <div class="footer_content">
+        <img class="footer_item" id="footer_alien_logo" src="https://static.wixstatic.com/media/44b079_4f4e1ce88e374dac81f13f016ecb3e6c~mv2.png/v1/fill/w_120,h_114,al_c,q_85,usm_0.66_1.00_0.01/Mr3DAlien%20%5BWhite%5D.webp">
+        <img class="footer_item" id="footer_pathway_studio_logo" src="resources/Logos/PathwayStudios.png">
+        <img class="footer_item" id="footer_sticky_piston_logo" src="https://static.wixstatic.com/media/44b079_eef048478f1d4916be00f1975f6f153e~mv2.png/v1/fill/w_464,h_120,al_c,q_85,usm_0.66_1.00_0.01/Stickypiston.webp">
+      </div>
+    </div>
+    <script src="js/anime.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/base.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var beforeAfterExample = new BeforeAfter(document.querySelector('#compare'));
+      });
+    </script>
+  </body>
+</html>
