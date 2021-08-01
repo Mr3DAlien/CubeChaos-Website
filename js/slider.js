@@ -1,13 +1,5 @@
 $(document).ready(() => {
-    $(".screenshot_slide_selector_right").click(() => {
-        $("#slider_left_img").attr("src", "resources/compare/compare_2_default.png");
-        $("#slider_right_img").attr("src", "resources/compare/compare_2_cubechaos.png");
-    });
 
-    $(".screenshot_slide_selector_left").click(() => {
-        $("#slider_left_img").attr("src", "resources/compare/compare_1_default.png");
-        $("#slider_right_img").attr("src", "resources/compare/compare_1_cubechaos.png");
-    });
 });
 var BeforeAfter = (function () {
     function BeforeAfter(handler) {
