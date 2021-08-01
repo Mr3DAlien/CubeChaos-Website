@@ -1,6 +1,9 @@
 body {
     margin: 0px;
-    background: #2F2E2E;
+
+    background-image: url("../resources/backgrounds/downloads_background.png");
+    background-repeat: repeat;
+    background-size: 256px 256px;
 }
 
 #header {
@@ -168,6 +171,7 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
     transition: all .2s ease-in-out;
+    filter: drop-shadow(10px 10px 0px rgba(0, 0, 0, 0.4));
 }
 
 .content_selection_image:hover {
