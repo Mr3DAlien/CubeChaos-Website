@@ -248,15 +248,15 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: visible;
+    align-items: flex-start;
+    overflow-x: auto;
 }
 
 .screenshot_slide_preview_img {
-    width: 100%;
+    width: 100px;
     height: 100%;
     margin: 5px;
+
     border-style: solid;
     border-color: white;
     transition: all .2s ease-in-out;
