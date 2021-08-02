@@ -173,13 +173,13 @@ body {
     height: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     filter: drop-shadow(10px 10px 0px rgba(0, 0, 0, 0.4));
 }
 
 .content_selection_image:hover {
     cursor: pointer;
-    scale: 1.1;
+    transform: scale(1.1);
 }
 
 .screenshot_slide {
@@ -240,7 +240,7 @@ body {
     transition: all .2s ease-in-out;
 }
 .drag-element:hover {
-    scale: 1.1;
+    transform: scale(1.1);
 }
 .screenshot_slide_selector {
     width: 100%;
@@ -264,7 +264,7 @@ body {
 
 .screenshot_slide_preview_img:hover {
     cursor: pointer;
-    scale: 1.07;
+    transform: scale(1.07);
 }
 .screenshot_slide_selector_btn {
     height: 30px;
@@ -297,7 +297,7 @@ body {
 
 .version:hover {
     cursor: pointer;
-    scale: 1.1;
+    transform: scale(1.1);
     filter: hue-rotate(50deg);
 }
 
@@ -321,7 +321,7 @@ body {
 }
 
 #more_versions_button:hover {
-    scale: 1.1;
+    transform: scale(1.1);
     filter: hue-rotate(20deg);
 }
 
@@ -348,7 +348,7 @@ body {
 
 .get_on_marketplace_image:hover {
     cursor: pointer;
-    scale: 1.07;
+    transform: scale(1.07);
 }
 
 .bedrock_changelog_button {
@@ -357,5 +357,5 @@ body {
 }
 
 .bedrock_changelog_button:hover {
-    scale: 1.1;
+    transform: scale(1.1);
 }
