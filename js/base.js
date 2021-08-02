@@ -1,31 +1,31 @@
 
 $(document).ready(function() {
     $("#java_edition_selection_image").hover(function() {
-        $(this).attr("src", "https://static.wixstatic.com/media/44b079_00380c948e7f437bb0805035f618747a~mv2.png/v1/fill/w_956,h_199,al_c,q_85,usm_0.66_1.00_0.01/Bedrock%20Edition.webp");
+        $(this).attr("src", "resources/buttons/big_buttons/java_edition_selected.png");
         
     }, function() {
-        $(this).attr("src", "https://static.wixstatic.com/media/44b079_ceef92a5ad064ca7a70bcdeb09d4a601~mv2.png/v1/fill/w_956,h_199,al_c,q_85,usm_0.66_1.00_0.01/Java%20Edition.webp");
+        $(this).attr("src", "resources/buttons/big_buttons/java_edition.png");
     });
 
     $("#bedrock_edition_selection_image").hover(function() {
-        $(this).attr("src", "https://static.wixstatic.com/media/44b079_ceef92a5ad064ca7a70bcdeb09d4a601~mv2.png/v1/fill/w_956,h_199,al_c,q_85,usm_0.66_1.00_0.01/Java%20Edition.webp");
+        $(this).attr("src", "resources/buttons/big_buttons/bedrock_edition_selected.png");
         
     }, function() {
-        $(this).attr("src", "https://static.wixstatic.com/media/44b079_00380c948e7f437bb0805035f618747a~mv2.png/v1/fill/w_956,h_199,al_c,q_85,usm_0.66_1.00_0.01/Bedrock%20Edition.webp");
+        $(this).attr("src", "resources/buttons/big_buttons/bedrock_edition.png");
     });
 
     $("#cubechaos_addons_selection_image").hover(function() {
-        $(this).attr("src", "https://static.wixstatic.com/media/44b079_ceef92a5ad064ca7a70bcdeb09d4a601~mv2.png/v1/fill/w_956,h_199,al_c,q_85,usm_0.66_1.00_0.01/Java%20Edition.webp");
+        $(this).attr("src", "resources/buttons/big_buttons/addons_selected.png");
         
     }, function() {
-        $(this).attr("src", "https://static.wixstatic.com/media/44b079_9773a702cc5941d3ba07f95de613835a~mv2.png/v1/fill/w_956,h_199,al_c,q_85,usm_0.66_1.00_0.01/Addons%20%5BNEW%5D.webp");
+        $(this).attr("src", "resources/buttons/big_buttons/addons.png");
     });
 
     $("#more_selection_image").hover(function() {
-        $(this).attr("src", "https://static.wixstatic.com/media/44b079_ceef92a5ad064ca7a70bcdeb09d4a601~mv2.png/v1/fill/w_956,h_199,al_c,q_85,usm_0.66_1.00_0.01/Java%20Edition.webp");
+        $(this).attr("src", "resources/buttons/big_buttons/more_selected.png");
         
     }, function() {
-        $(this).attr("src", "https://static.wixstatic.com/media/44b079_010d79d30e9e45078f529d3745fc4ce2~mv2.png/v1/fill/w_956,h_199,al_c,q_85,usm_0.66_1.00_0.01/More.webp");
+        $(this).attr("src", "resources/buttons/big_buttons/more.png");
     });
 
     $("#more_versions_button").click(() => {
