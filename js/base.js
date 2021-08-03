@@ -114,11 +114,13 @@ $(document).ready(function() {
         let more_versions_button = $("#more_versions_button");
         if (more_versions_button.hasClass("active")) {
             more_versions_button.removeClass("active");
+            more_versions_button.attr("src", "./resources/buttons/download_buttons/more_button.png");
             $(".additional_version").hide();
             //more_versions_button.show();
         } else {
             more_versions_button.addClass("active");
             //more_versions_button.hide();
+            more_versions_button.attr("src", "./resources/buttons/download_buttons/less_button.png");
             $(".additional_version").show();
         }
     });

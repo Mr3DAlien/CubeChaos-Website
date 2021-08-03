@@ -1,5 +1,7 @@
 body {
     margin: 0px;
+    position: relative;
+    min-height: 100vh;
     background-image: url("../resources/backgrounds/downloads_background.png");
     background-repeat: repeat;
     background-size: 256px 256px;
@@ -97,6 +99,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 200px;
 }
 
 @media (max-width: 490px) {
@@ -130,10 +133,11 @@ body {
 }
 
 .footer {
-    margin-top: 100px;
+    position: absolute;
+    bottom: 0;
     background-color: #181818;
     height: 140px;
-    width: auto;
+    width: 100%;
 }
 
 .footer_content {
