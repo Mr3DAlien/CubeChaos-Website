@@ -320,10 +320,19 @@ body {
 #more_versions_button {
     cursor: pointer;
     transition: all .2s ease-in-out;
-    
 }
 
 #more_versions_button:hover {
+    transform: scale(1.1);
+    filter: hue-rotate(20deg);
+}
+
+#more_versions_button_addons {
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+#more_versions_button_addons:hover {
     transform: scale(1.1);
     filter: hue-rotate(20deg);
 }
@@ -378,6 +387,7 @@ body {
     flex: 0 0 30%;
     transition: all .2s ease-in-out;
     filter: drop-shadow(7px 7px 0px rgba(0, 0, 0, 1));
+    cursor: pointer;
 }
 
 .addons_card_container img:hover {

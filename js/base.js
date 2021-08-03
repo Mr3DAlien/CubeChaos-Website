@@ -109,6 +109,11 @@ $(document).ready(function() {
         $("#slider_right_img").attr("src", "resources/screenshots/java_edition/end_cubechaos.png");
     });
 
+    // Addons
+    $("#3d_blocks_card").click(function() {
+        window.location.replace("./addons_html/3d_blocks.html");
+    });
+
 
     $("#more_versions_button").click(() => {
         let more_versions_button = $("#more_versions_button");
@@ -121,6 +126,21 @@ $(document).ready(function() {
             more_versions_button.addClass("active");
             //more_versions_button.hide();
             more_versions_button.attr("src", "./resources/buttons/download_buttons/less_button.png");
+            $(".additional_version").show();
+        }
+    });
+
+    $("#more_versions_button_addons").click(() => {
+        let more_versions_button = $("#more_versions_button_addons");
+        if (more_versions_button.hasClass("active")) {
+            more_versions_button.removeClass("active");
+            more_versions_button.attr("src", "../resources/buttons/download_buttons/more_button.png");
+            $(".additional_version").hide();
+            //more_versions_button.show();
+        } else {
+            more_versions_button.addClass("active");
+            //more_versions_button.hide();
+            more_versions_button.attr("src", "../resources/buttons/download_buttons/less_button.png");
             $(".additional_version").show();
         }
     });
