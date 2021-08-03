@@ -1,6 +1,5 @@
 body {
     margin: 0px;
-
     background-image: url("../resources/backgrounds/downloads_background.png");
     background-repeat: repeat;
     background-size: 256px 256px;
@@ -131,7 +130,7 @@ body {
 }
 
 .footer {
-    margin-top: 50px;
+    margin-top: 100px;
     background-color: #181818;
     height: 140px;
     width: auto;
@@ -358,4 +357,42 @@ body {
 
 .bedrock_changelog_button:hover {
     transform: scale(1.1);
+}
+
+.addons_card_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.addons_card_container img {
+    height: auto;
+    width: 100%;
+    margin: 1.5%;
+    flex: 0 0 30%;
+    transition: all .2s ease-in-out;
+    filter: drop-shadow(7px 7px 0px rgba(0, 0, 0, 1));
+}
+
+.addons_card_container img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 490px) {
+    .addons_card_container {
+        border-style: dashed;
+        border-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .addons_card_container img {
+        height: auto;
+        width: 100%;
+        margin: 1.5%;
+    }
 }
