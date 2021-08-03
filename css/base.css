@@ -239,8 +239,8 @@ body {
 .drag-element {
     transition: all .2s ease-in-out;
 }
-.drag-element:hover {
-    transform: scale(1.1);
+.before-after .drag-handler .drag-element:hover {
+    transform: scale(1.1) rotate(45deg);
 }
 .screenshot_slide_selector {
     width: 100%;
