@@ -114,6 +114,16 @@ $(document).ready(function() {
         window.location.replace("./addons_html/3d_blocks.html");
     });
 
+    // Addons
+    $("#3d_ores_card").click(function() {
+        window.location.replace("./addons_html/3d_ores.html");
+    });
+
+    // Addons
+    $("#3d_crystals_card").click(function() {
+        window.location.replace("./addons_html/3d_crystals.html");
+    });
+
 
     $("#more_versions_button").click(() => {
         let more_versions_button = $("#more_versions_button");
