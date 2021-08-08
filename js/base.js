@@ -29,6 +29,7 @@ $(document).ready(function() {
     });
 
     //Hardcore Screenshot selector in screenshot slide
+    // Java Screenshots
     $(".simg_0").click(function() {
         $("#slider_left_img").attr("src", "resources/screenshots/java_edition/forest_vanilla.png");
         $("#slider_right_img").attr("src", "resources/screenshots/java_edition/forest_cubechaos.png");
@@ -107,6 +108,22 @@ $(document).ready(function() {
     $(".simg_15").click(function() {
         $("#slider_left_img").attr("src", "resources/screenshots/java_edition/end_vanilla.png");
         $("#slider_right_img").attr("src", "resources/screenshots/java_edition/end_cubechaos.png");
+    });
+
+    // Bedrock Screenshots
+    $(".simg_16").click(function() {
+        $("#slider_left_img").attr("src", "resources/screenshots/bedrock_edition/forest_vanilla.png");
+        $("#slider_right_img").attr("src", "resources/screenshots/bedrock_edition/forest_cubechaos.png");
+    });
+
+    $(".simg_17").click(function() {
+        $("#slider_left_img").attr("src", "resources/screenshots/bedrock_edition/jungle_vanilla.png");
+        $("#slider_right_img").attr("src", "resources/screenshots/bedrock_edition/jungle_cubechaos.png");
+    });
+
+    $(".simg_18").click(function() {
+        $("#slider_left_img").attr("src", "resources/screenshots/bedrock_edition/pillager_outpost_vanilla.png");
+        $("#slider_right_img").attr("src", "resources/screenshots/bedrock_edition/pillager_outpost_cubechaos.png");
     });
 
     // Addons
