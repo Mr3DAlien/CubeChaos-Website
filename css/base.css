@@ -106,6 +106,29 @@ body {
     margin: auto;
 }
 
+#banner_arrow_left_container {
+    height: 100%;
+}
+
+#banner_arrow_right_container {
+    height: 100%;
+}
+
+#banner_arrow_left_container img {
+    width: 70px;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transform: rotate(180deg);
+}
+
+#banner_arrow_right_container img {
+    width: 70px;
+    position: absolute;
+    top: 40%;
+    right: 10%;
+}
+
 @media (max-width: 490px) {
     .banner {
         display: block;
