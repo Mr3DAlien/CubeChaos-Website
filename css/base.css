@@ -19,16 +19,17 @@ body {
     height: 100px;
 }
 
-#header_logo {
+#header_logo a {
     margin-left: 15%;
     height: 100px;
     width: 200px;
     display: flex;
     align-items: center;
+    transition: all .2s ease-in-out;
 }
 
 @media (max-width: 490px) {
-    #header_logo {
+    #header_logo a {
         margin-left: 12%;
         height: 100px;
         width: 200px;
@@ -39,6 +40,11 @@ body {
 
 #logo {
     height: 80px;
+    transition: all .2s ease-in-out;
+}
+
+#logo:hover {
+    transform: scale(1.05);
 }
 
 #logo_text {
@@ -433,17 +439,15 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    
 }
 
 .addons_card_container img {
     height: auto;
-    width: 100%;
+    width: 30%;
     margin: 1.5%;
     flex: 0 0 30%;
     transition: all .2s ease-in-out;
     filter: drop-shadow(7px 7px 0px rgba(0, 0, 0, 1));
-    cursor: pointer;
 }
 
 .addons_card_container img:hover {
@@ -452,8 +456,6 @@ body {
 
 @media (max-width: 490px) {
     .addons_card_container {
-        border-style: dashed;
-        border-color: white;
         display: flex;
         justify-content: center;
         align-items: center;
