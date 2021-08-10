@@ -126,6 +126,21 @@ $(document).ready(function() {
         $("#slider_right_img").attr("src", "resources/screenshots/bedrock_edition/pillager_outpost_cubechaos.png");
     });
 
+    $(".simg_19").click(function() {
+        $("#slider_left_img").attr("src", "resources/screenshots/bedrock_edition/mansion_vanilla.png");
+        $("#slider_right_img").attr("src", "resources/screenshots/bedrock_edition/mansion_cubechaos.png");
+    });
+
+    $(".simg_20").click(function() {
+        $("#slider_left_img").attr("src", "resources/screenshots/bedrock_edition/mineshaft_vanilla.png");
+        $("#slider_right_img").attr("src", "resources/screenshots/bedrock_edition/mineshaft_cubechaos.png");
+    });
+
+    $(".simg_21").click(function() {
+        $("#slider_left_img").attr("src", "resources/screenshots/bedrock_edition/village_vanilla.png");
+        $("#slider_right_img").attr("src", "resources/screenshots/bedrock_edition/village_cubechaos.png");
+    });
+
     // Addons
     $("#3d_blocks_card").click(function() {
         window.location.replace("./addons_html/3d_blocks.html");
