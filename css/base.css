@@ -87,7 +87,7 @@ body {
     background-color: rgb(0, 0, 0);
 }
 
-.banner {
+.banner_space {
     display: block;
     height: 330px;
     overflow: hidden;
@@ -95,42 +95,52 @@ body {
     filter: drop-shadow(0px 15px 10px rgba(0, 0, 0, 0.8));
 }
 
-.banner_img {
-    height: auto;
+.banner_container {
     width: 100%;
-    position:absolute;
-    top: -9999px;
-    bottom: -9999px;
-    left: -9999px;
-    right: -9999px;
+    height: 100%;
+    overflow: hidden;
+    background-image: url("../resources/banner/backgrounds/banner_background_0.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+.banner_slide {
+    height: 100%;
+    width: 70%;
+    max-width: 1000px;
     margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-#banner_arrow_left_container {
-    height: 100%;
+.banner_slide img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
-#banner_arrow_right_container {
-    height: 100%;
-}
-
-#banner_arrow_left_container img {
-    width: 70px;
+.banner_button {
+    z-index: 9999;
     position: absolute;
-    top: 40%;
+    top: calc(50% - 10px);
+    width: 20px;
+    height: 20px;
+}
+
+.banner_left_button {
     left: 10%;
-    transform: rotate(180deg);
 }
 
-#banner_arrow_right_container img {
-    width: 70px;
-    position: absolute;
-    top: 40%;
+.banner_right_button {
     right: 10%;
 }
 
-@media (max-width: 490px) {
-    .banner {
+
+@media (max-width: 620px) {
+    .banner_space {
         display: block;
         height: 230px;
         overflow: hidden;
