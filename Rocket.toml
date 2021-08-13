@@ -1,0 +1,9 @@
+[release]
+address = "0.0.0.0"
+port = 8031
+workers = 4
+keep_alive = 5
+log_level = "critical"
+
+#PLACEHOLDER KEY
+secret_key = "kfjY4fpX5tJ9bNlQtBkAXIzNzmKr0cR4wSOVwQSoLto="
