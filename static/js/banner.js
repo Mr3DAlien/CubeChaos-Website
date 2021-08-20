@@ -59,7 +59,7 @@ $(document).ready(function () {
    }
 
    function set_appropriate_background() {
-       var image_url = "/static/resources/banner/backgrounds/banner_background_" + current_banner_index + ".png";
+       var image_url = "/static/resources/banner/backgrounds/banner_background_" + current_banner_index + ".png.webp";
         $(".banner_container_background_holder_0").css("background-image", "url(" + image_url + ")");
         $(".banner_container_background_holder_1").fadeOut(1000, function() {
             $(".banner_container_background_holder_1").css("background-image", "url(" + image_url + ")");

@@ -1,6 +1,6 @@
 [release]
-address = "0.0.0.0"
-port = 8031
+address = "127.0.0.1"
+port = 10314
 workers = 4
 keep_alive = 5
 log_level = "critical"
