@@ -23,28 +23,20 @@
     </div>
     <div class="header_spacer"></div>
     <div class="content">
-        <div class="team_container">
-            <div class="team_member_container">
-                <img class="team_picture" src="/static/resources/team/logo/mr3dalien_background.png">
-                <div class="transparent_text_container team_text">
-                    <div class="transparent_text">Hey, my name is Mr3DAlien.
-                    </div>
-                    <div class="transparent_text_background">
-                    </div>
-                </div>
-            </div>
-            <div class="team_member_container" id="team_member_to_swap_0">
-                <div class="transparent_text_container team_text" id="textbox_to_swap_0">
-                    <div class="transparent_text">Yo, I'm Alex and I'm the guy that developed this website and who is currently maintaining it.
-                    </div>
-                    <div class="transparent_text_background">
-                    </div>
-                </div>
-                <img class="team_picture" id="team_picture_to_swap_0" src="/static/resources/team/logo/alexander.png">
-            </div>
+      <div class="transparent_text_container">
+        <div class="transparent_text"><h2>TERMS AND CONDITIONS</h2>
+<h3>INFORMATION ABOUT US</h3>CubeChaos.net is a domain and website owned by Mr3DAlien.
+CubeChaos is a "Minecraft Resourcepack" made and owned by Mr3DAlien.
+<h3>PURCHASES AND PAYMENT</h3>This website does not provide any purchaseable goods or software. All purchases are provided and managed by third party companies. Most importantly, the owners of the "Minecraft Marketplace" - the "Microsoft Corporation".
+<h3>LINKS TO DIFFERENT WEBSITES</h3>CubeChaos.net contains several links to different third-party websites and web services. Mr3DAlien has no control over these websites and provides no responsibility for the practices of these external websites and website providers.
+<h3>DISCLAIMER</h3>The use of our service is solely at your own risk. We do not guarantee constant availability or security of our services nor do we guarantee that any errors will be corrected.
+<h3>CONTACT</h3>In case there are any questions left, please contact us under:
+contact@cubechaos.net
         </div>
+        <div class="transparent_text_background">
+        </div>
+      </div>
     </div>
-    
     <div class="footer">
       <div class="footer_content">
         <div class="footer_about_left">
@@ -78,31 +70,9 @@
     </div>
     <script src="/static/js/anime.min.js"></script>
     <script src="/static/js/jquery-3.6.0.min.js"></script>
-    <script src="/static/js/base.js"></script>
+    <script src="/static/js/banner.js"></script>
     <script>
-    $(window).on('load resize', function() { //Fires when window is loaded or resized
-      var div1 = $('#textbox_to_swap_0');
-      var div2 = $('#team_picture_to_swap_0');
-      var wrapper = $('#team_member_to_swap_0');
 
-      if ($(window).width() > 1000) {
-        wrapper.prepend(div1).append(div2); // move div 1 to start & div2 to end
-      } else {
-        wrapper.prepend(div2).append(div1); // move div 2 to start & div 1 to end
-      }
-    });
-
-    setTimeout(function () {
-        $(".team_text").height($(".team_picture").height()); 
-        $(".team_text").height($(".team_text").height()-3); 
-    }, 200);
-    
-    $(window).resize(function () {
-        if ($(window).width() >= 1000) {
-          $(".team_text").height($(".team_picture").height()); 
-          $(".team_text").height($(".team_text").height() - 3); 
-        }
-    });
     </script>
   </body>
 </html>

@@ -137,6 +137,21 @@ body {
     object-fit: contain;
 }
 
+.banner_slide_1_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 20px;
+    width: 60%;
+}
+
+
+#banner_nether_update {
+    width: 120%;
+}
+
 .banner_button {
     z-index: 9999;
     position: absolute;
@@ -152,6 +167,8 @@ body {
 
 .banner_right_button {
     right: 10%;
+    background: transparent;
+    border: 0;
 }
 
 
@@ -162,6 +179,16 @@ body {
         overflow: hidden;
         margin-top: -30px;
         filter: drop-shadow(0px 15px 10px rgba(0, 0, 0, 0.8));
+    }
+
+    .banner_slide_1_div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: 60%;
     }
 }
 
