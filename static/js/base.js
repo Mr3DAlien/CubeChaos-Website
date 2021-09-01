@@ -186,4 +186,25 @@ $(document).ready(function() {
             $(".additional_version").show();
         }
     });
+
+    $("#header_twitter_icon").hover(function() {
+        $(this).attr("src", "/static/resources/icons/twitter_selected.png");
+        
+    }, function() {
+        $(this).attr("src", "/static/resources/icons/twitter.png");
+    });
+
+    $("#header_github_icon").hover(function() {
+        $(this).attr("src", "/static/resources/icons/github_selected.png");
+        
+    }, function() {
+        $(this).attr("src", "/static/resources/icons/github.png");
+    });
+
+    $("#header_mr3dalien_icon").hover(function() {
+        $(this).attr("src", "/static/resources/icons/mr3dalien_selected.png");
+        
+    }, function() {
+        $(this).attr("src", "/static/resources/icons/mr3dalien.png");
+    });
 });

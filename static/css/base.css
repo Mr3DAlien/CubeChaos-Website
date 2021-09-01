@@ -30,8 +30,6 @@ body {
     height: 100%;
     display: flex;
     flex-direction: row;
-    border-style: dashed;
-    border-color: white;
 }
 
 #header_logo {
@@ -39,8 +37,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: left;
-    border-color: white;
-    border-style: dashed;
 }
 
 #header_logo_a {
@@ -55,8 +51,22 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-color: white;
-    border-style: dashed;
+}
+
+#banner_sticky_piston_logo {
+    width: 10%;
+}
+
+#banner_sticky_piston_logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#banner_sticky_piston_logo a img {
+    width: 100%;
+    margin-left: 10px;
 }
 
 #header_icons {
@@ -64,8 +74,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border-color: white;
-    border-style: dashed;
 }
 
 #header_icons a {
@@ -77,8 +85,9 @@ body {
 }
 
 #header_icons a img {
-    height: 40%;
-    width: auto;
+    height: auto;
+    padding: 20%;
+    width: 100%;
     image-rendering: crisp-edges;
 }
 
@@ -107,7 +116,11 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-left: -20px;
+        margin-left: -5px;
+    }
+
+    #banner_sticky_piston_logo {
+        display: none;
     }
 }
 
