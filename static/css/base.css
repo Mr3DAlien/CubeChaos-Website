@@ -239,7 +239,7 @@ body {
     object-fit: contain;
 }
 
-.banner_slide_1_div {
+.banner_slide_div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -249,9 +249,12 @@ body {
     width: 60%;
 }
 
+#banner_slide_1_java_edition {
+    margin-left: 12px;
+}
 
-#banner_nether_update {
-    width: 120%;
+#banner_download_button{
+    width: 100%;
 }
 
 .banner_button {
