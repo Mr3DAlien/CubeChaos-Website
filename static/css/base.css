@@ -231,12 +231,14 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    overflow: visible;
 }
 
 .banner_slide img {
     width: 100%;
     height: auto;
     object-fit: contain;
+    filter: drop-shadow(7px 7px 0px rgba(0, 0, 0, 0.7));
 }
 
 .banner_slide_div {
@@ -247,13 +249,58 @@ body {
     overflow: hidden;
     margin-top: 20px;
     width: 60%;
+    overflow: visible;
+}
+
+#banner_slide_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+#banner_slide_1_div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: visible;
+}
+.banner_download_button{
+    margin-left: 10px;
+    width: 60%;
+    transition: all 0.2s ease-in-out;
+}
+
+.banner_download_button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 #banner_slide_1_java_edition {
-    margin-left: 12px;
+    width: 78%;
 }
 
-#banner_download_button{
+#banner_slide_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+#banner_slide_2_div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: visible;
+    width: 40%;
+}
+.banner_marketplace_button{
+    margin-left: 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+.banner_marketplace_button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#banner_slide_2_bedrock_edition {
     width: 100%;
 }
 
@@ -263,7 +310,6 @@ body {
     top: calc(50% - 10px);
     width: 20px;
     height: 20px;
-    
 }
 
 .banner_left_button {
@@ -278,6 +324,14 @@ body {
 
 
 @media (max-width: 620px) {
+    #banner_slide_1_java_edition {
+        width: 78%;
+        margin-left: 7px;
+    }
+
+    #banner_slide_2_bedrock_edition {
+        margin-left: 4px;
+    }
     .banner_space {
         display: block;
         height: 230px;
