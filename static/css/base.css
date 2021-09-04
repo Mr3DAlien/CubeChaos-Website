@@ -88,7 +88,10 @@ body {
     height: auto;
     padding: 20%;
     width: 100%;
-    image-rendering: crisp-edges;
+    image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
 }
 
 
