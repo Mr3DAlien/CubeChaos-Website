@@ -207,4 +207,56 @@ $(document).ready(function() {
     }, function() {
         $(this).attr("src", "/static/resources/icons/mr3dalien.png");
     });
+    
 });
+
+$(window).on('load resize', function() { //Fires when window is loaded or resized
+    var div1 = $('#textbox_to_swap_0');
+    var div2 = $('#team_picture_to_swap_0');
+    var wrapper = $('#team_member_to_swap_0');
+
+    if ($(window).width() > 1000) {
+      wrapper.prepend(div1).append(div2); // move div 1 to start & div2 to end
+    } else {
+      wrapper.prepend(div2).append(div1); // move div 2 to start & div 1 to end
+    }
+});
+
+function swapNodes(n1, n2) {
+
+    var p1 = n1.parentNode;
+    var p2 = n2.parentNode;
+    var i1, i2;
+    
+    if ( !p1 || !p2 || p1.isEqualNode(n2) || p2.isEqualNode(n1) ) return;
+    
+    for (var i = 0; i < p1.children.length; i++) {
+        if (p1.children[i].isEqualNode(n1)) {
+            i1 = i;
+        }
+    }
+    for (var i = 0; i < p2.children.length; i++) {
+        if (p2.children[i].isEqualNode(n2)) {
+            i2 = i;
+        }
+    }
+    
+    if ( p1.isEqualNode(p2) && i1 < i2 ) {
+        i2++;
+    }
+    p1.insertBefore(n2, p1.children[i1]);
+    p2.insertBefore(n1, p2.children[i2]);
+    }
+    
+        var mobile = false;
+        $(window).on('load resize', function() {
+          var div1 = $('.footer_about_left');
+          var div2 = $('.footer_logo');
+          if (($(window).width() > 900) && (mobile == true)){
+            swapNodes(div1[0], div2[0]);
+            mobile = false;
+          } else if (($(window).width() < 900) && (mobile == false)){
+            swapNodes(div1[0], div2[0]);
+            mobile = true;
+          }
+        });

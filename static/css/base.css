@@ -103,8 +103,14 @@ body {
 }
 
 @media (max-width: 600px) {
-    #header_icons {
-        display: none;
+
+    #header {
+        height: 200px;
+    }
+    #header_content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     #header_space_between {
@@ -121,6 +127,14 @@ body {
 
     #banner_sticky_piston_logo {
         display: none;
+    }
+
+    #header_icons {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: -7%;
     }
 }
 
@@ -477,11 +491,11 @@ body {
     }
 
     .footer {
-        height: 140px;
+        height: 200px;
     }
 
-    .footer_logo {
-        display: none;
+    .content {
+        padding-bottom: 250px;
     }
 }
 

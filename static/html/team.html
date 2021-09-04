@@ -9,11 +9,32 @@
   </head>
   <body>
     <div id="header">
-      <div id="header_logo">
-        <a href="/static/html/index.html">
-          <img id="logo" src="/static/resources/icons/cube_chaos_logo.png">
-          <img id="logo_text" src="/static/resources/logos/cube_chaos_fullhd.png">
-        </a>
+      <div id="header_content">
+        <div id="header_logo">
+          <a id="header_logo_a" href="/static/html/index.html">
+            <img id="logo" src="/static/resources/icons/cube_chaos_logo.png">
+            <img id="logo_text" src="/static/resources/logos/cube_chaos_fullhd.png">
+          </a>
+        </div>
+        <div id="header_space_between">
+
+        </div>
+        <div id="header_icons">
+          <a href="https://twitter.com/CubeChaosRP">
+            <img id="header_twitter_icon" src="/static/resources/icons/twitter.png">
+          </a>
+          <a href="https://github.com/Mr3DAlien/Alien-Webserver">
+            <img id="header_github_icon" src="/static/resources/icons/github.png">
+          </a>
+          <a href="http://mr3dalien.net/">
+            <img id="header_mr3dalien_icon" src="/static/resources/icons/mr3dalien.png">
+          </a>
+        </div>
+        <div id="banner_sticky_piston_logo">
+          <a href="https://stickypiston.co/r/Mr3DAlien">
+            <img src="/static/resources/icons/stickypiston.png">
+          </a>
+        </div>
       </div>
     </div>
     <div id="navbar">
@@ -80,29 +101,6 @@
     <script src="/static/js/jquery-3.6.0.min.js"></script>
     <script src="/static/js/base.js"></script>
     <script>
-    $(window).on('load resize', function() { //Fires when window is loaded or resized
-      var div1 = $('#textbox_to_swap_0');
-      var div2 = $('#team_picture_to_swap_0');
-      var wrapper = $('#team_member_to_swap_0');
-
-      if ($(window).width() > 1000) {
-        wrapper.prepend(div1).append(div2); // move div 1 to start & div2 to end
-      } else {
-        wrapper.prepend(div2).append(div1); // move div 2 to start & div 1 to end
-      }
-    });
-
-    setTimeout(function () {
-        $(".team_text").height($(".team_picture").height()); 
-        $(".team_text").height($(".team_text").height()-3); 
-    }, 200);
-    
-    $(window).resize(function () {
-        if ($(window).width() >= 1000) {
-          $(".team_text").height($(".team_picture").height()); 
-          $(".team_text").height($(".team_text").height() - 3); 
-        }
-    });
     </script>
   </body>
 </html>
