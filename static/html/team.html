@@ -45,25 +45,21 @@
     <div class="header_spacer"></div>
     <div class="content">
         <div class="team_container">
-            <div class="team_member_container">
-                <img class="team_picture" src="/static/resources/team/logo/mr3dalien_background.png">
-                <div class="transparent_text_container team_text">
-                    <div class="transparent_text">Hey, my name is Mr3DAlien.
-                    </div>
-                    <div class="transparent_text_background">
-                    </div>
-                </div>
-            </div>
-            <div class="team_member_container" id="team_member_to_swap_0">
-                <div class="transparent_text_container team_text" id="textbox_to_swap_0">
-                    <div class="transparent_text">Yo, I'm Alex and I'm the guy that developed this website and who is currently maintaining it.
-                    </div>
-                    <div class="transparent_text_background">
-                    </div>
-                </div>
-                <img class="team_picture" id="team_picture_to_swap_0" src="/static/resources/team/logo/alexander.png">
+            <div class="team_member_wrapper">
+              <img class="team_member_picture" src="/static/resources/team/logo/alexander.png">
+              <div class="team_member_text">
+                <p>AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA</p>
+              </div>
             </div>
         </div>
+        <div class="team_container">
+          <div class="team_member_wrapper">
+            <img class="team_member_picture" src="/static/resources/team/logo/mr3dalien_background.png">
+            <div class="team_member_text">
+              <p>AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA AAAAAA</p>
+            </div>
+          </div>
+      </div>
     </div>
     
     <div class="footer">
@@ -116,12 +112,15 @@
     setTimeout(function () {
         $(".team_text").height($(".team_picture").height()); 
         $(".team_text").height($(".team_text").height()-3); 
+        $(".transparent_text_background").height($(".team_text").height());
     }, 200);
 
     $(window).resize(function () {
         if ($(window).width() >= 1000) {
           $(".team_text").height($(".team_picture").height()); 
           $(".team_text").height($(".team_text").height() - 3); 
+        } else {
+          $(".transparent_text_background").height($(".team_text").height());
         }
     });
     </script>
