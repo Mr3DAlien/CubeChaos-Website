@@ -910,10 +910,18 @@ body {
     font-size: clamp(0px, 1.05vw, 15px);
 }
 
+.team_member_wrapper_reverse {
+    flex-direction: row-reverse;
+}
+
 @media (max-width: 1000px) {
     .team_member_wrapper {
         flex-direction: column;
         margin-top: 14px;
+    }
+
+    .team_member_wrapper_reverse {
+        flex-direction: column;
     }
 
     .team_member_picture {
