@@ -69,6 +69,7 @@ body {
     margin-left: 10px;
 }
 
+
 #header_icons {
     width: 20%;
     display: flex;
@@ -302,6 +303,27 @@ body {
 
 #banner_slide_2_bedrock_edition {
     width: 100%;
+}
+
+#banner_slide_3_mr3dalien {
+    margin-top: -7%;
+    width: 100%;
+}
+#banner_slide_3_buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: -11.5%;
+    height: 30%;
+    width: 200%;
+}
+
+#banner_slide_3_buttons img {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#banner_slide_3_buttons img:hover {
+    scale: 1.07;
 }
 
 .banner_button {
