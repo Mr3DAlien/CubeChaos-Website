@@ -336,6 +336,9 @@ body {
 
 .banner_left_button {
     left: 10%;
+    background: transparent;
+    border: 0;
+    rotate: 180deg;
 }
 
 .banner_right_button {
