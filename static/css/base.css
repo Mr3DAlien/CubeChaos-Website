@@ -1033,3 +1033,28 @@ body {
         flex-direction: column;
     }
 }
+
+.bugreports_resourcepack_image {
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+@media (max-width: 1000px) {
+    .bugreports_resourcepack_image {
+        width: 70%;
+        margin-top: 10px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+@media (max-width: 800px) {
+    .bugreports_resourcepack_image {
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
