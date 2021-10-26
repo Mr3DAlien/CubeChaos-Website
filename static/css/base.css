@@ -327,18 +327,28 @@ body {
 }
 
 .banner_button {
+    cursor: pointer;
     z-index: 9999;
     position: absolute;
-    top: calc(50% - 10px);
+    top: calc(50% - 30px);
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
     width: 20px;
     height: 20px;
 }
 
 .banner_left_button {
     left: 10%;
+    transform: rotate(180deg);
+    top: calc(50% + 10px);
     background: transparent;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
     border: 0;
-    rotate: 180deg;
 }
 
 .banner_right_button {
