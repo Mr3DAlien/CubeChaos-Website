@@ -1039,6 +1039,12 @@ body {
     margin-top: 10px;
     margin-left: 25%;
     margin-right: 25%;
+    filter: drop-shadow(10px 10px 0px rgba(0, 0, 0, 0.4));
+    transition: all 0.2s ease-in-out;
+}
+
+.bugreports_resourcepack_image:hover {
+    scale: 1.1;
 }
 
 @media (max-width: 1000px) {
