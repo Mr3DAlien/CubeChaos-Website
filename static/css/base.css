@@ -833,10 +833,12 @@ body {
 
 .bedrock_changelog_button:hover {
     transform: scale(1.1);
+    filter: hue-rotate(20deg);
 }
 
 .java_changelog_button:hover {
     transform: scale(1.1);
+    filter: hue-rotate(20deg);
 }
 
 .addons_card_container {
@@ -1026,6 +1028,7 @@ body {
 }
 .bugs_buttons img:hover {
     scale: 1.1;
+    filter: hue-rotate(-50deg);
 }
 
 @media (max-width: 740px) {
@@ -1045,6 +1048,7 @@ body {
 
 .bugreports_resourcepack_image:hover {
     scale: 1.1;
+    filter: hue-rotate(-50deg);
 }
 
 @media (max-width: 1000px) {
