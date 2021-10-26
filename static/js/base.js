@@ -141,6 +141,31 @@ $(document).ready(function() {
         $("#slider_right_img").attr("src", "/static/resources/screenshots/bedrock_edition/village_cubechaos.png.webp");
     });
 
+    $(".simg_22").click(function() {
+        $("#slider_left_img").attr("src", "/static/resources/screenshots/bedrock_edition/dripstone_cave_vanilla.webp");
+        $("#slider_right_img").attr("src", "/static/resources/screenshots/bedrock_edition/dripstone_cave_cubechaos.webp");
+    });
+    $(".simg_23").click(function() {
+        $("#slider_left_img").attr("src", "/static/resources/screenshots/bedrock_edition/ice_spikes_vanilla.webp");
+        $("#slider_right_img").attr("src", "/static/resources/screenshots/bedrock_edition/ice_spikes_cubechaos.webp");
+    });
+
+    $(".simg_24").click(function() {
+        $("#slider_left_img").attr("src", "/static/resources/screenshots/bedrock_edition/mansion_inside_vanilla.webp");
+        $("#slider_right_img").attr("src", "/static/resources/screenshots/bedrock_edition/mansion_inside_cubechaos.webp");
+    });
+
+    $(".simg_25").click(function() {
+        $("#slider_left_img").attr("src", "/static/resources/screenshots/bedrock_edition/fortress_vanilla.webp");
+        $("#slider_right_img").attr("src", "/static/resources/screenshots/bedrock_edition/fortress_cubechaos.webp");
+    });
+
+    $(".simg_26").click(function() {
+        $("#slider_left_img").attr("src", "/static/resources/screenshots/bedrock_edition/bastion_vanilla.webp");
+        $("#slider_right_img").attr("src", "/static/resources/screenshots/bedrock_edition/bastion_cubechoas.webp");
+    });
+
+
     // Addons
     $("#3d_blocks_card").click(function() {
         window.location.replace("/static/html/addons_html/3d_blocks.html");
