@@ -15,9 +15,11 @@ $(document).ready(function () {
         duration: 700,
         easing: 'easeOutElastic(0.5, 1.4)',
       });
-
+      
+    var is_auto = true;
     $(".banner_right_button").click(function () {
         var button = $(this);
+        is_auto = false;
         button.prop("disabled", true);
         setTimeout(function(){
             button.prop('disabled', false);
@@ -27,6 +29,7 @@ $(document).ready(function () {
     
     $(".banner_left_button").click(function () {
         var button = $(this);
+        is_auto = false;
         button.prop("disabled", true);
         setTimeout(function(){
             button.prop('disabled', false);
@@ -34,6 +37,11 @@ $(document).ready(function () {
         left_pressed();
    });
 
+   var intervalId = setInterval(function() {
+       if (is_auto) {
+        right_pressed(7000);
+       }
+   }, 7000);
    function right_pressed() {
     current_banner_index = current_banner_index + 1;
     current_banner_index = current_banner_index % banners.length;
