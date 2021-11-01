@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
     <meta http-equiv="expires" content="26400">
-    <title>CubeChaos - Downloads</title>
+    <title>CubeChaos</title>
     <link rel="stylesheet" href="/static/css/base.css">
     <link rel="icon" type="image/x-icon" href="/static/resources/icons/cube_chaos_icon.svg" />
+
   </head>
   <body>
     <div id="header">
@@ -23,7 +24,7 @@
           <a class="header_a" href="https://twitter.com/CubeChaosRP">
             <img class="header_icon_pop" id="header_twitter_icon" src="/static/resources/icons/twitter.png">
           </a>
-          <a href="https://github.com/CubeChaos">
+          <a href="https://github.com/Mr3DAlien/Alien-Webserver">
             <img class="header_icon_pop" id="header_github_icon" src="/static/resources/icons/github.png">
           </a>
           <a href="http://mr3dalien.net/">
@@ -44,24 +45,26 @@
       <a href="/static/html/bugs.html" class="navbar_button"> Bugs </a>
     </div>
     <div class="header_spacer"></div>
-    <div class="content">
-      <div class="content_sections">
-        <a href="/static/html/java_edition.html">
-          <img class="content_selection_image" id="java_edition_selection_image" src="/static/resources/buttons/big_buttons/java_edition.png.webp">
-        </a>
-        <a href="/static/html/bedrock_edition.html">
-          <img class="content_selection_image" id="bedrock_edition_selection_image" src="/static/resources/buttons/big_buttons/bedrock_edition.png.webp">
-        </a>
-        <a href="/static/html/x-mas_edition.html">
-          <img class="content_selection_image" id="x-mas_edition_selection_image" src="/static/resources/buttons/big_buttons/x-mas_edition.png">
-        </a>
-        <a href="/static/html/addons.html">
-          <img class="content_selection_image" id="cubechaos_addons_selection_image" src="/static/resources/buttons/big_buttons/addons.png.webp">
-        </a>
-        <a href="http://mr3dalien.net">
-          <img class="content_selection_image" id="more_selection_image" src="/static/resources/buttons/big_buttons/more.png.webp">
-        </a>
-      </div>
+      <div class="content">
+        <img class="java_logo" src="/static/resources/logos/x-mas_edition.png">
+        <div class="screenshot_slide">
+          <div id="compare">
+            <img id="slider_left_img" src="/static/resources/screenshots/x-mas_edition/x-mas_off.png" alt="Before" />
+            <img id="slider_right_img" src="/static/resources/screenshots/x-mas_edition/x-mas_on.png" alt="After" />
+          </div>
+            <!--</div>
+            <div class="screenshot_slide_selector_btn screenshot_slide_selector_left"></div>
+            <div class="screenshot_slide_selector_btn screenshot_slide_selector_right"></div>
+          </div> -->
+        </div>
+        <div class="version_selection_wrapper">
+          <div class="relevant_versions">
+            <a href="#" class="version"><img src="https://static.wixstatic.com/media/44b079_db99923fc2ad46eaafea687cf163189d~mv2.png/v1/fill/w_152,h_71,al_c,q_85/Version%20Button%20%5B1_17%5D.webp"></a>
+          </div>
+          <!-- <div class="more_versions">
+            <img id="more_versions_button_addons" src="../resources/buttons/download_buttons/more_button.png">
+          </div>-->
+        </div>
     </div>
     <div class="footer">
       <div class="footer_content">
@@ -96,9 +99,14 @@
     </div>
     <script src="/static/js/anime.min.js"></script>
     <script src="/static/js/jquery-3.6.0.min.js"></script>
+    <script src="/static/js/slider.js"></script>
     <script src="/static/js/base.js"></script>
     <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var beforeAfterExample = new BeforeAfter(document.querySelector('#compare'));
+      });
 
+      
     </script>
   </body>
 </html>
