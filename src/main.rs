@@ -11,7 +11,7 @@ use rocket::http::hyper::header;
 use rocket::response::Redirect;
 use rocket::response::Responder;
 use rocket::tokio::fs::File;
-
+use rocket::Request;
 
 pub struct CachedFile(NamedFile);
 
@@ -40,6 +40,11 @@ fn redirect_to_home() -> Redirect {
     Redirect::to("/")
 }
 
+#[catch(404)]
+async fn not_found(req: &Request<'_>) -> CachedFile {
+    CachedFile::open("./static/html/not_found.html").await.unwrap()
+}
+
 #[get("/static/<path..>")]
 async fn static_file(path: PathBuf) -> Option<CachedFile> {
     let mut file_path = PathBuf::new();
@@ -51,4 +56,5 @@ async fn static_file(path: PathBuf) -> Option<CachedFile> {
 #[launch]
 fn rocket() -> _ {
     rocket::build().mount("/", routes![index, redirect_to_home, static_file])
+        .register("/", catchers![not_found])
 }
