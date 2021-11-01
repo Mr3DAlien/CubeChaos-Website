@@ -186,13 +186,13 @@ $(document).ready(function() {
         let more_versions_button = $("#more_versions_button");
         if (more_versions_button.hasClass("active")) {
             more_versions_button.removeClass("active");
-            more_versions_button.attr("src", "/static/resources/buttons/download_buttons/more_button.png");
+            more_versions_button.attr("src", "/static/resources/buttons/download_buttons/more_button.png.webp");
             $(".additional_version").hide();
             //more_versions_button.show();
         } else {
             more_versions_button.addClass("active");
             //more_versions_button.hide();
-            more_versions_button.attr("src", "/static/resources/buttons/download_buttons/less_button.png");
+            more_versions_button.attr("src", "/static/resources/buttons/download_buttons/less_button.png.webp");
             $(".additional_version").show();
         }
     });
@@ -201,36 +201,36 @@ $(document).ready(function() {
         let more_versions_button = $("#more_versions_button_addons");
         if (more_versions_button.hasClass("active")) {
             more_versions_button.removeClass("active");
-            more_versions_button.attr("src", "/static/resources/buttons/download_buttons/more_button.png");
+            more_versions_button.attr("src", "/static/resources/buttons/download_buttons/more_button.png.webp");
             $(".additional_version").hide();
             //more_versions_button.show();
         } else {
             more_versions_button.addClass("active");
             //more_versions_button.hide();
-            more_versions_button.attr("src", "/static/resources/buttons/download_buttons/less_button.png");
+            more_versions_button.attr("src", "/static/resources/buttons/download_buttons/less_button.png.webp");
             $(".additional_version").show();
         }
     });
 
     $("#header_twitter_icon").hover(function() {
-        $(this).attr("src", "/static/resources/icons/twitter_selected.png");
+        $(this).attr("src", "/static/resources/icons/twitter_selected.png.webp");
         
     }, function() {
-        $(this).attr("src", "/static/resources/icons/twitter.png");
+        $(this).attr("src", "/static/resources/icons/twitter.png.webp");
     });
 
     $("#header_github_icon").hover(function() {
-        $(this).attr("src", "/static/resources/icons/github_selected.png");
+        $(this).attr("src", "/static/resources/icons/github_selected.png.webp");
         
     }, function() {
-        $(this).attr("src", "/static/resources/icons/github.png");
+        $(this).attr("src", "/static/resources/icons/github.png.webp");
     });
 
     $("#header_mr3dalien_icon").hover(function() {
-        $(this).attr("src", "/static/resources/icons/mr3dalien_selected.png");
+        $(this).attr("src", "/static/resources/icons/mr3dalien_selected.png.webp");
         
     }, function() {
-        $(this).attr("src", "/static/resources/icons/mr3dalien.png");
+        $(this).attr("src", "/static/resources/icons/mr3dalien.png.webp");
     });
     
 });
