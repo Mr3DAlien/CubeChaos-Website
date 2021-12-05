@@ -14,6 +14,13 @@ $(document).ready(function() {
         $(this).attr("src", "/static/resources/buttons/big_buttons/bedrock_edition.png.webp");
     });
 
+    $("#x-mas_edition_selection_image").hover(function() {
+        $(this).attr("src", "/static/resources/buttons/big_buttons/x-mas_edition_selected.png");
+        
+    }, function() {
+        $(this).attr("src", "/static/resources/buttons/big_buttons/x-mas_edition.png");
+    });
+
     $("#cubechaos_addons_selection_image").hover(function() {
         $(this).attr("src", "/static/resources/buttons/big_buttons/addons_selected.png.webp");
         
